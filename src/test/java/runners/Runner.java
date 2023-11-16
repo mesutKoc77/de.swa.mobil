@@ -20,7 +20,7 @@ import org.junit.runner.RunWith;
         features = "/Users/mesut/IdeaProjects/AppiumCucumber_T113/src/test/resources/features",
         glue = "stepdefinitions",
         tags = "@t113",
-        dryRun =true
+        dryRun =false
         //Cucumbber i ilk kurarkenplugin bolumunden Cucumber For Java pluginini install
         //edilmeli
         // eger features dosyamizin icerisinde eksik bir adim varsa o adimin methpodunu olusturmasi icin dryRun i true yapariz
