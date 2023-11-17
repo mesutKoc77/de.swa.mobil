@@ -11,7 +11,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-public class apkYukleme {
+public class _apkYukleme {
     //kalan 1.12.45
 
     AndroidDriver<AndroidElement> driver;
