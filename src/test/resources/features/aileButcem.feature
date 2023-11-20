@@ -1,5 +1,5 @@
 
-@123
+@yukle
 Feature: Kullanici Aile Butcem Profilininde ilgili degisiklikleri yapabilir.
     Scenario: Kullanici Aile Butcem Profilininde ilgili degisiklikleri yapabilir.
 

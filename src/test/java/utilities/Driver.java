@@ -16,8 +16,8 @@ public class Driver {
     static final String ANDROIDVERSION="10.0";
     static final String PLATFORM="Android";
     static final String OTOMASYON_ISMI="UiAutomator2";
-    public  static String APP_PACKAGE="com.smartwho.SmartAllCurrencyConverter";
-    public  static String APP_ACTIVITY="com.smartwho.SmartAllCurrencyConverter.CurrencyConverter";
+    public  static String APP_PACKAGE="com.ailebutcem";
+    public  static String APP_ACTIVITY="com.ailebutcem.MainActivity";
 
     public static AndroidDriver getAndroidDriver()  {
         URL appiumServerURL = null;

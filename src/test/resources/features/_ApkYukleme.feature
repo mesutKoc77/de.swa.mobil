@@ -1,4 +1,4 @@
-@yukle
+
 Feature: Kullanici bir App yukleyebilir
 
   Scenario: Kullanici basariyla bir app yukler

@@ -20,7 +20,7 @@ public  class ReusableMethods {
 
     public static void koordinatTiklama(int x, int y) {
         touchAction.press(PointOption.point(x, y)).release().perform();
-        waitHelper.sleep(1);
+        WaitHelper.sleep(1);
 
     }
 
