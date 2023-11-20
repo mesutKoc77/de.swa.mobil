@@ -1,5 +1,5 @@
 
-@aileButcem
+@123
 Feature: Kullanici Aile Butcem Profilininde ilgili degisiklikleri yapabilir.
     Scenario: Kullanici Aile Butcem Profilininde ilgili degisiklikleri yapabilir.
 

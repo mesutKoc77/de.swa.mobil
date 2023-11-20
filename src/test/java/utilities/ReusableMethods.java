@@ -24,6 +24,21 @@ public  class ReusableMethods {
 
     }
 
+    public static void belliSayiIleEkranKaydirma(
+                                          int startX, int startY,
+                                          int endX, int endY,
+                                          long waitTimeMillis,
+                                          int repeatCount) {
+        for (int i = 0; i < repeatCount; i++) {
+            touchAction
+                    .press(PointOption.point(startX, startY))
+                    .waitAction(WaitOptions.waitOptions(Duration.ofMillis(waitTimeMillis)))
+                    .moveTo(PointOption.point(endX, endY))
+                    .release()
+                    .perform();
+        }
+    }
+
     public static void scroll(int startX, int startY, int endX, int endY) {
         touchAction
                 .press(PointOption.point(startX, startY))  // Başlangıç koordinatları
