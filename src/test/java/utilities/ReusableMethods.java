@@ -5,8 +5,12 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.apache.commons.io.FileUtils;
+import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
@@ -68,6 +72,19 @@ public  class ReusableMethods {
         FileUtils.copyFile(source, finalDestination);
         return target;
     }
+
+    public boolean isToastMessageDisplayed(String message, int timeout) {
+        try {
+            WebDriverWait wait = new WebDriverWait(Driver.getAndroidDriver(), Duration.ofSeconds(timeout).getSeconds());
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//android.widget.TextView[@resource-id='text1' and @text='" + message + "']")));
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+        //asagi ile de assert edersin.
+     // Assert.assertTrue(isToastMessageDisplayed("Başarılı"));
+    }
+
 
 
 }
