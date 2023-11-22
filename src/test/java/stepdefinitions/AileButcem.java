@@ -71,13 +71,17 @@ for (int i = 0; i < 6; i++) {
 
     }
 
-    @Then("Sol kisimdaki hesabim bolumune gidwer")
-    public void sol_kisimdaki_hesabim_bolumune_gidwer() {
+    @Then("Sol kisimdaki {string} bolumune gidwer")
+    public void sol_kisimdaki_hesabim_bolumune_gidwer(String ilgiliBolum) {
+        aileButcemPage.hamburgerMenu.click();
+        ReusableMethods.scrollWithUiScrollable(ilgiliBolum);
 
     }
 
     @Then("Hesabim bolumundeki degisikileri degistirir ve kayit eder.")
     public void hesabim_bolumundeki_degisikileri_degistirir_ve_kayit_eder() {
+        aileButcemPage.hamburgerMenu.click();
+
 
     }
 

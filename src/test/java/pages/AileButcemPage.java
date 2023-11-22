@@ -1,9 +1,11 @@
 package pages;
+
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
+
 import java.time.Duration;
 
 public class AileButcemPage {
@@ -22,10 +24,11 @@ public class AileButcemPage {
     @FindBy(xpath = "//*[@text=\"Şifre\"]")
     public MobileElement passwordField;
 
-    @FindBy (xpath = "//android.widget.TextView[@resource-id='text1' and @text='Başarılı']")
+    @FindBy(xpath = "//android.widget.TextView[@resource-id='text1' and @text='Başarılı']")
     public MobileElement toastMessage;
 
+    @FindBy(xpath = "//android.widget.ImageView[contains(@bounds, '[79,108][137,155]')]\n")
+    public MobileElement hamburgerMenu;
 
-
-
+//kalan 50
 }

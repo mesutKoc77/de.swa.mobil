@@ -7,7 +7,9 @@ Feature: Kullanici Aile Butcem Profilininde ilgili degisiklikleri yapabilir.
       Given Ilk ekran ayarlarini yapar ve login sayfasina ulasir
       Then "aileButcemEmail" ve "aileButcemPassword" bilgilerini girerek giris yapar.
       And kullanicnin giris yapabildigini dogrulanir
-      And Sol kisimdaki hesabim bolumune gidwer
+      And Sol kisimdaki "Hesabım" bolumune gidwer
       And Hesabim bolumundeki degisikileri degistirir ve kayit eder.
       And Degisikliklerin basariyla yapildigi dogrulanir
+
+
 
