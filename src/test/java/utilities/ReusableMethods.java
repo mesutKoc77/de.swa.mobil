@@ -22,6 +22,12 @@ public  class ReusableMethods {
 
     static TouchAction touchAction = new TouchAction<>(Driver.getAndroidDriver());
 
+    public static void koordinatTiklama(int xKoordinat,int yKoordinat,int bekleme) throws InterruptedException {
+        TouchAction touchAction=new TouchAction<>(Driver.getAndroidDriver());
+        touchAction.press(PointOption.point(xKoordinat,yKoordinat)).release().perform();
+        Thread.sleep(bekleme);
+    }
+
     public static void koordinatTiklama(int x, int y) {
         touchAction.press(PointOption.point(x, y)).release().perform();
         WaitHelper.sleep(1);
