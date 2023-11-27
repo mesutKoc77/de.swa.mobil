@@ -11,8 +11,11 @@ public class BrowserStep {
         BrowserDriver.getBrowserDriver();
 
     }
+
     @Given("kullanici amazon sayfasina gider")
     public void kullanici_amazon_sayfasina_gider() {
+
+        BrowserDriver.getBrowserDriver().get("https://www.amazon.com/");
 
     }
 

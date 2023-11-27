@@ -25,7 +25,6 @@ import org.junit.runner.RunWith;
         // Eger eksik adim varsa true iken bize adimlari verecektir. Eger ki eksik adim yoksa bize test passed.FAKAT BU SADECE EKSIK ADIM YOK DEMEKTIR TESTIN GERCEK ANLAMDA PASSED OLDUGU ANLAMINA GELMEZ
         // Eger eksik adimimiz yoksa ve testlerimizi kosturmak istiyorsak false yaparak test sonuclarimizin passed ya da failed oldugunu gorebiliriz
 
-        //1. 50
 )
 
 public class Runner {

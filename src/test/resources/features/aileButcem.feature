@@ -1,4 +1,5 @@
 
+@D
 Feature: Kullanici Aile Butcem Profilininde ilgili degisiklikleri yapabilir ve Gelir ekleyebilir.
 
   Background: Kullanici Basariyla Giris Yapar
@@ -12,7 +13,7 @@ Feature: Kullanici Aile Butcem Profilininde ilgili degisiklikleri yapabilir ve G
     And Hesabim bolumundeki degisikileri degistirir ve kayit eder.
     And Degisikliklerin basariyla yapildigi dogrulanir
     * Kullanici uygulamayi kapatir
-  @yukle
+
   Scenario: Kullanici basariyla "Gelir" Ekler
     //1.46
 
