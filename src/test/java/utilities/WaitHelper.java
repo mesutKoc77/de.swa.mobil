@@ -23,6 +23,7 @@ public class WaitHelper {
         return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
+
     public static  WebElement waitForVisible (WebElement element, int timeout) {
         WebDriverWait wait = new WebDriverWait(Driver.getAndroidDriver(), Duration.ofSeconds(timeout).getSeconds());
         return wait.until(ExpectedConditions.visibilityOf(element));
