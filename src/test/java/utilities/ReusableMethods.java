@@ -6,9 +6,7 @@ import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -65,6 +63,15 @@ public  class ReusableMethods {
 
     }
 
+    public static void BrowserScrollWithUiScrollable(String elementText) {
+        AndroidDriver driver = (AndroidDriver)  BrowserDriver.getBrowserDriver();
+        driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"" + elementText + "\"))");
+        driver.findElementByXPath("//*[@text='" + elementText + "']").click();
+
+    }
+
+
+
 
 
     public static String getScreenshot(String name) throws IOException {
@@ -79,6 +86,12 @@ public  class ReusableMethods {
         // save the screenshot to the path given
         FileUtils.copyFile(source, finalDestination);
         return target;
+    }
+
+    public static void clickElementByJS(WebElement element) {
+        // javascript executor click
+        JavascriptExecutor jsexecutor = ((JavascriptExecutor) BrowserDriver.getBrowserDriver());
+        jsexecutor.executeScript("arguments[0].click();", element);
     }
 
     public boolean isToastMessageDisplayed(String message, int timeout) {

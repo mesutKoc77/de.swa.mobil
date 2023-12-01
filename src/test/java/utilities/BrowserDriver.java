@@ -24,7 +24,7 @@ public class BrowserDriver {
         if (browserDriver == null) {
 
             DesiredCapabilities caps =new DesiredCapabilities();
-            caps.setCapability(MobileCapabilityType.DEVICE_NAME, "PIXEL2");
+            caps.setCapability(MobileCapabilityType.DEVICE_NAME, "PIXEL 2");
             caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10.0");
             caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
             caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
