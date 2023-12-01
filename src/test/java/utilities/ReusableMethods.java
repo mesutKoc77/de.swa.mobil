@@ -65,6 +65,8 @@ public  class ReusableMethods {
 
     }
 
+
+
     public static String getScreenshot(String name) throws IOException {
         // naming the screenshot with the current date to avoid duplication
         String date = new SimpleDateFormat("yyyyMMddhhssmm").format(new Date());

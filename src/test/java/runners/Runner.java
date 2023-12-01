@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber.json",},
         features = "/Users/mesut/IdeaProjects/AppiumCucumber_T113/src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@Driver",
+        tags = "@qd",
         dryRun =false
         //Cucumbber i ilk kurarkenplugin bolumunden Cucumber For Java pluginini install
         //edilmeli
