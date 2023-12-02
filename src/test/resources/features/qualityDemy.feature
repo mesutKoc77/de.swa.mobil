@@ -7,7 +7,8 @@
       * Kullanici qualiytdemy sayfasina gider
       * Kullanici Cookiesöeri kabul eder
       * Login e tiklayarak login sayfasina ulastigini dogrular
-      * yanlis degerlerle "<mail>" "<sifre>" siteye giris yapamadigini dogrular
+      * yanlis degerler "<mail>" "<sifre>" girer ve hatali login oldugunu test eder
+
       Examples:
       | mail  | |  sifre |
       |  yanlisMail | | yanlisSifre  |

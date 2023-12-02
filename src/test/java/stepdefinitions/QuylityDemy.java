@@ -43,17 +43,21 @@ public class QuylityDemy {
 
     }
 
-    @Given("yanlis degerlerle {string} {string} siteye giris yapamadigini dogrular")
-    public void yanlis_degerlerle_siteye_giris_yapamadigini_dogrular(String mail, String sifre) throws InterruptedException {
-        Thread.sleep(2);
+    @Given("yanlis degerler {string} {string} girer ve hatali login oldugunu test eder")
+    public void yanlis_degerler_girer(String mail, String sifre) throws InterruptedException {
         browserQuality.mailField.sendKeys(ConfigReader.getProperty(mail));
-        Thread.sleep(2);
         browserQuality.passwordField.sendKeys(ConfigReader.getProperty(sifre));
-        Thread.sleep(2);
         browserQuality.submitLoginButton.click();
 
+    }
+
+    @Given("driveri kapatir")
+    public void yanlis_degerler_girer() {
+        driver.quit();
 
     }
+
+
 
     @Given("Kullanici Cookiesöeri kabul eder")
     public void kullanici_cookiesöeri_kabul_eder() {
