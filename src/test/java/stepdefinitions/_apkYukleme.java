@@ -12,12 +12,12 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class _apkYukleme {
-    //kalan 1.12.45
+
 
     AndroidDriver<AndroidElement> driver;
-    static final String TELEFONADI = "PIXEL2";
+    static final String TELEFONADI = "PIXEL 7 API 33";
     static final String PLATFORM = "Android";
-    static final String ANDROIDVERSION = "10.0";
+    static final String ANDROIDVERSION = "13.0";
     static final String OTOMASYON_ISMI = "UiAutomator2";
     public static String URL = "http://127.0.0.1:4723/wd/hub";
 
@@ -29,13 +29,9 @@ public class _apkYukleme {
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, TELEFONADI);
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, PLATFORM);
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, ANDROIDVERSION);
-        capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, OTOMASYON_ISMI); //"Android 6" nin altinda bir surum soz konusu ise
-        //UiAutomator kullanilir.
-        //bir sonraki satir herhangi bir uygulamayi yuklemek icin kullanilir.
+        capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, OTOMASYON_ISMI);
         capabilities.setCapability(MobileCapabilityType.APP, ConfigReader.getProperty(apkPath));
-        //app capabilitytype bir uygulmyi yuklee /*
-        // mek istedigimizde indirdigimiz apk dosyasinin path uzantisini  vererek
-        // o uygulamayi yuklemek icin kullandigimiz desiredCapability./
+
         driver = new AndroidDriver<AndroidElement>(new URL(URL), capabilities);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 

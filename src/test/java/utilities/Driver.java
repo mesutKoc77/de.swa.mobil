@@ -2,6 +2,7 @@ package utilities;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.MalformedURLException;
@@ -12,12 +13,12 @@ public class Driver {
 
     private static AndroidDriver appiumDriver;
 
-    static final String TELEFONADI="PIXEL2";
-    static final String ANDROIDVERSION="10.0";
+    static final String TELEFONADI="Redmi Note 9";
+    static final String ANDROIDVERSION="12.0";
     static final String PLATFORM="Android";
     static final String OTOMASYON_ISMI="UiAutomator2";
-    public  static String APP_PACKAGE="com.ailebutcem";
-    public  static String APP_ACTIVITY="com.ailebutcem.MainActivity";
+    public  static String APP_PACKAGE="";
+    public  static String APP_ACTIVITY="";
 
     public static AndroidDriver getAndroidDriver()  {
         URL appiumServerURL = null;
@@ -34,11 +35,10 @@ public class Driver {
             caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, ANDROIDVERSION);
             caps.setCapability(MobileCapabilityType.PLATFORM_NAME, PLATFORM);
             caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, OTOMASYON_ISMI);
-            caps.setCapability("appPackage",APP_PACKAGE); // Hangi uygulama uzerinde calismak istiyorsak apk infodan o uygulamanin degerini aliyoruz
-            caps.setCapability("appActivity",APP_ACTIVITY); // Uygulamayi actiktan sonra hangi sayfadan baslayacagimizi orn; Anasayfa, Profil, vb
+            caps.setCapability("appPackage",APP_PACKAGE);
+            caps.setCapability("appActivity",APP_ACTIVITY);
             caps.setCapability(MobileCapabilityType.NO_RESET,false);
-            // true uygulama sifirlanmiyor onceki adimlari muhafaza ediyor
-            //false ise her test baslangicinda uygulamayi sifirliyor ve uygulama en bastan basliyor
+
 
             if (ConfigReader.getProperty("platformName").equals("Android")) {
 

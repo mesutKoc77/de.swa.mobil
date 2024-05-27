@@ -64,9 +64,7 @@ public  class ReusableMethods {
     }
 
     public static void BrowserScrollWithUiScrollable(String elementText) {
-        AndroidDriver driver = (AndroidDriver)  BrowserDriver.getBrowserDriver();
-        driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"" + elementText + "\"))");
-        driver.findElementByXPath("//*[@text='" + elementText + "']").click();
+
 
     }
 
@@ -89,9 +87,7 @@ public  class ReusableMethods {
     }
 
     public static void clickElementByJS(WebElement element) {
-        // javascript executor click
-        JavascriptExecutor jsexecutor = ((JavascriptExecutor) BrowserDriver.getBrowserDriver());
-        jsexecutor.executeScript("arguments[0].click();", element);
+
     }
 
     public boolean isToastMessageDisplayed(String message, int timeout) {

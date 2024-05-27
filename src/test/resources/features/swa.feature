@@ -1,10 +1,14 @@
 
-@D
+@mesut
 Feature: Kullanici Aile Butcem Profilininde ilgili degisiklikleri yapabilir ve Gelir ekleyebilir.
 
   Background: Kullanici Basariyla Giris Yapar
-    Given Kullanici Driver Kurulumunu yapar ve "aileButcemAppPackage" "aileButcemAppActivity" ile teste konu uygulamaya yonlendirir.
+    Given Kullanici Driver Kurulumunu yapar ve "swaAppPackage" "swaAppActivity" ile teste konu uygulamaya yonlendirir.
     Given Ilk ekran ayarlarini yapar ve login sayfasina ulasir
+    Then Kullanici D_Ticket'i tiklar
+
+
+
     Then "aileButcemEmail" ve "aileButcemPassword" bilgilerini girerek giris yapar.
     And kullanicnin giris yapabildigini dogrulanir
 
