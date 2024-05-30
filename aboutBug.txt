@@ -1,0 +1,42 @@
+BUG Title:
+[MOBILE] User encounters error while browsing and inspecting the application
+
+Error Description:
+The user encountered a specific error while browsing the application and inspecting its contents. In this error, unexpected behavior occurred during a specific operation or function.
+
+Steps:
+
+The user launches the application and views specific content.
+While browsing through the content, the user performs a specific action.
+An error occurs, resulting in unexpected behavior.
+
+Expected Behavior:
+When the user performs a specific action, they should receive the expected outcome. The application should process the user's requests accurately and should not encounter unexpected errors.
+
+Actual Behavior:
+During a specific operation, an unexpected error occurred. This error prevented the user from proceeding and the expected content or functionality was not provided.
+
+Screenshots:
+
+Please see the attached photo
+
+Environment Details:
+
+Operating System: Android
+Device: Redmi Note 9
+Application Version: 1.3.6
+Android Version: 12.0
+
+Priority:
+High
+
+Assigned To:
+---
+
+Pre-Conditions:
+---
+
+Additional Information:
+
+This test was conducted both manually and using automation.
+Tools and Technologies Used: Java, Appium, Selenium.
