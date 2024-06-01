@@ -64,69 +64,9 @@ public class swa {
         ReusableMethods.scroll(539,1801,543,579);
         geri doner
 
-
-
-
-
-
          */
     }
 
-
-
-
-
-
-    @Then("kullanicnin giris yapabildigini dogrulanir")
-    public void kullanicnin_giris_yapabildigini_dogrulanir() {
-
-    }
-
-    @Then("Sol kisimdaki {string} bolumune gidwer")
-    public void sol_kisimdaki_hesabim_bolumune_gidwer(String ilgiliBolum) throws InterruptedException {
-
-
-    }
-
-    @Then("Hesabim bolumundeki degisikileri degistirir ve kayit eder.")
-    public void hesabim_bolumundeki_degisikileri_degistirir_ve_kayit_eder() throws InterruptedException {
-
-
-
-    }
-
-
-    @And("Degisikliklerin basariyla yapildigi dogrulanir")
-    public void degisikliklerinBasariylaYapildigiDogrulanir() {
-
-
-    }
-
-    @Then("Kullanici uygulamayi kapatir")
-    public void kullanici_uygulamayi_kapatir() {
-        Driver.quitAppiumDriver();
-    }
-
-    @Then("anasayfadaki arti butonuna tiklayin")
-    public void anasayfadaki_arti_butonuna_tiklayin() {
-
-
-    }
-
-    @Then("gelir ekle bolumune tiklayin")
-    public void gelir_ekle_bolumune_tiklayin() {
-
-    }
-
-    @Then("aciklama,gelir tip, kategori, tarih ve tutari belirleyin ve kaydedin")
-    public void aciklama_gelir_tip_kategori_tarih_ve_tutari_belirleyin_ve_kaydedin() {
-
-    }
-
-    @Then("basariyla eklendigini dogrulayin")
-    public void basariyla_eklendigini_dogrulayin() {
-
-    }
 
 
 
